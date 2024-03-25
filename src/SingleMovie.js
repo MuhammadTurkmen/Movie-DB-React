@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { API_ENDPOINT } from './context'
+import { url } from './Movies'
 
 const SingleMovie = () => {
   const { id } = useParams()
@@ -39,7 +40,7 @@ const SingleMovie = () => {
   
   const {Poster: poster, Title: title, Plot: plot, Year: year} = movie
   return <section className='single-movie'>
-    <img src={poster} alt={title}/>
+    <img src={poster ? poster : url} alt={title}/>
   </section>
 }
 
