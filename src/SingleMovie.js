@@ -30,7 +30,9 @@ const SingleMovie = () => {
   }
 
   if(error.show) {
-    return <div className='page-error'></div>
+    return <div className='page-error'>
+      <h1></h1>
+    </div>
   }
   
   
