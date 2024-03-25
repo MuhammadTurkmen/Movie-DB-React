@@ -13,6 +13,7 @@ const SingleMovie = () => {
     const data = await response.json()
     if(data.Reasponse === 'False') {
       setErorr({show: true, msg: data.Error})
+      setIsLoading(false)
     }   
     else { 
       setMovie(data)
