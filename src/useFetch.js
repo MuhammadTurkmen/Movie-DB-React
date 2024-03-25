@@ -31,7 +31,7 @@ const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MO
     fetchMovies(`${API_ENDPOINT}${urlPrams}`)
   }, [urlPrams])
 
-  return
+  return {isLoading, error, }
 }
 
 export default useFetch
