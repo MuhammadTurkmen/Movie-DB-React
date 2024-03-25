@@ -12,11 +12,11 @@ const SingleMovie = () => {
     const response =  await fetch(url)
     const data = await response.json()
     if(data.Reasponse === 'False') {
-
+      setErorr({show: true, msg: data.Error})
     }   
     else { 
       setMovie(data)
-      isLoading(false) 
+      setIsLoading(false) 
     }
   }
 
