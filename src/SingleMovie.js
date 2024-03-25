@@ -44,6 +44,7 @@ const SingleMovie = () => {
     <div className='single-movie-info'>
       <h2>{title}</h2>
       <p>{plot}</p>
+      <h4></h4>
     </div>
   </section>
 }
