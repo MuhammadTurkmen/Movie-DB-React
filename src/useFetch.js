@@ -15,7 +15,7 @@ const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MO
       const data = await response.json()
 
       if(data.Response === 'True') {
-        setMovies(data.Search)
+        setData(data.Search)
         setError({show: false, msg: ''})
       } 
       else {
