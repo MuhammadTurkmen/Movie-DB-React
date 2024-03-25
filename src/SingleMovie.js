@@ -14,7 +14,7 @@ const SingleMovie = () => {
     if(data.Reasponse === 'False') {
 
     }   
-    else {
+    else { 
       setMovie(data)
       isLoading(false) 
     }
