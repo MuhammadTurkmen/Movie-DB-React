@@ -8,9 +8,7 @@ const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MO
   const [error, setError] = useState({show:false, msg:''})
   const [movies, setMovies] = useState([])
   
-  return (
-    <div>useFetch</div>
-  )
+  return
 }
 
 export default useFetch
