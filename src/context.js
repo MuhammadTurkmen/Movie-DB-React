@@ -7,6 +7,7 @@ const AppContext = React.createContext()
 const AppProvider = ({ children }) => {
 
   const [query, setQuery] = useState('superman')
+  const {} = useFetch(``)
   
 
   
