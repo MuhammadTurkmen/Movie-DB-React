@@ -29,7 +29,7 @@ const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MO
   
   useEffect(() => {
     fetchMovies(`${API_ENDPOINT}&s=${query}`)
-  }, [query])
+  }, [urlPrams])
 
   return
 }
