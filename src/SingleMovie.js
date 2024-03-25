@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { API_ENDPOINT } from './context'
 import { url } from './Movies'
+import useFetch from './useFetch'
 
 const SingleMovie = () => {
   const { id } = useParams()
