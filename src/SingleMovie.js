@@ -13,7 +13,11 @@ const SingleMovie = () => {
     const data = await response.json()
     if(data.Reasponse === 'False') {
 
-    }  
+    }   
+    else {
+      setMovie(data)
+      isLoading(false) 
+    }
   }
 
   useEffect(() => {
