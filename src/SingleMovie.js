@@ -43,6 +43,7 @@ const SingleMovie = () => {
     <img src={poster === 'N/A' ? url : poster} alt={title}/>
     <div className='single-movie-info'>
       <h2>{title}</h2>
+      <p>{plot}</p>
     </div>
   </section>
 }
