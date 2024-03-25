@@ -1,10 +1,9 @@
 import React, { useState, useContext, useEffect } from 'react'
 
-export const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_API_Key}`
-const AppContext = React.createContext()
+const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MOVIE_API_Key}`
 
 
-export const useFetch = () => {
+ const useFetch = () => {
   return (
     <div>useFetch</div>
   )
