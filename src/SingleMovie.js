@@ -40,7 +40,7 @@ const SingleMovie = () => {
   
   const {Poster: poster, Title: title, Plot: plot, Year: year} = movie
   return <section className='single-movie'>
-    <img src={poster ? poster : url} alt={title}/>
+    <img src={poster === 'N/A' ? url : poster} alt={title}/>
   </section>
 }
 
