@@ -42,7 +42,7 @@ const SingleMovie = () => {
   return <section className='single-movie'>
     <img src={poster === 'N/A' ? url : poster} alt={title}/>
     <div className='single-movie-info'>
-      <h2></h2>
+      <h2>{title}</h2>
     </div>
   </section>
 }
