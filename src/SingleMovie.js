@@ -37,6 +37,7 @@ const SingleMovie = () => {
   }
   
   
+  const {Poster: poster, Title: title, Plot: plot, Year: year}
   return <h2>single movie</h2>
 }
 
