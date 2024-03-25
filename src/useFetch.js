@@ -34,4 +34,4 @@ const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MO
   return {isLoading, error, }
 }
 
-export default useFetch
+export default useFetch 
