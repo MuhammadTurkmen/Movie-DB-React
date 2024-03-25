@@ -32,7 +32,7 @@ const SingleMovie = () => {
   if(error.show) {
     return <div className='page-error'>
       <h1>{error.msg}</h1>
-      <Link />
+      <Link to='/' className="btn"/>
     </div>
   }
   
