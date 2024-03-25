@@ -38,7 +38,9 @@ const SingleMovie = () => {
   
   
   const {Poster: poster, Title: title, Plot: plot, Year: year} = movie
-  return <section className='single-movie'></section>
+  return <section className='single-movie'>
+    <img src={}/>
+  </section>
 }
 
 export default SingleMovie
