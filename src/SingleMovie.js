@@ -37,7 +37,7 @@ const SingleMovie = () => {
   }
   
   
-  const {Poster: poster, Title: title, Plot: plot, Year: year}
+  const {Poster: poster, Title: title, Plot: plot, Year: year} = movie
   return <h2>single movie</h2>
 }
 
