@@ -5,6 +5,9 @@ const SearchForm = () => {
   return <form className='search-form' onSubmit={(e) => e.preventDefault()}>
     <h2>search movies</h2>
     <input type="text" className='form-input' onChange={(e) => e.targer.value}/>
+    {error.show && <div className='error'>
+      {error.msg}  
+    </div>}
   </form>
 }
  
