@@ -6,7 +6,7 @@ import useFetch from './useFetch'
 
 const SingleMovie = () => {
   const { id } = useParams()
-  
+  const {} = useFetch()
 
   if(isLoading) {
     return <div className='loading'></div>
