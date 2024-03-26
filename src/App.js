@@ -6,9 +6,8 @@ import Movie from './SingleMovie'
 
 function App() {
   return <Routes>
-    <Route path='/' exact>
-      <Home />
-    </Route>
+    <Route path='/' element={<Home />} />
+      
     <Route path="/movies/:id" children={<Movie />}/>
   </Routes>
 }
