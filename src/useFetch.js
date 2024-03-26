@@ -15,7 +15,7 @@ const API_ENDPOINT = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_MO
       const data = await response.json()
 
       if(data.Response === 'True') {
-        setData(data.Search)
+        setData(data.Search || data)
         setError({show: false, msg: ''})
       } 
       else {
