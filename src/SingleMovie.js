@@ -12,8 +12,8 @@ const SingleMovie = () => {
     const response =  await fetch(url)
     const data = await response.json()
     if(data.Reasponse === 'False') {
-      
-    }
+
+    } 
   }
 
   useEffect(() => {
