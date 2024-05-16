@@ -11,7 +11,12 @@ const SingleMovie = () => {
   const fetchMovie = async (url) => {
     const response =  await fetch(url)
     const data = await response.json()
+
   }
+
+  useEffect(() => {
+
+  }, [])
   
   return <h2>single movie</h2>
 }
